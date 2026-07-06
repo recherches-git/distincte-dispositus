@@ -1,0 +1,17 @@
+{
+  "name": "distincte-dispositus",
+  "version": "1.0.0",
+  "description": "The phrase \"distincte dispositus\" is Latin, translating literally to \"distinctly arranged\" or \"clearly disposed.\"  It generally refers to elements, parts, or concepts that are meticulously separated, organized, and logically laid out so they do not overlap or cause confusion.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "path": "^0.12.7"
+  }
+}
