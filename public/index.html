@@ -24,6 +24,18 @@
         </div>
     <!--Titles and shit-->
     <div>
+    <!--Fucking clock-->
+    <div>
+        <div style="position:absolute; right:10px;" id="clock"></div>
+             <script>
+                function updateClock() {
+                document.getElementById("clock").textContent =
+                new Date().toLocaleTimeString();
+                }
+                updateClock();
+                setInterval(updateClock, 1000);
+            </script>
+        </div>
         <!--Title of the page, NOT THE FUCKING TITLE BAR-->
         <div>
             <center>
