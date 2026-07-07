@@ -53,6 +53,25 @@
             </center>
         </div>
         <hr>
+        <div>  
+            <input id="secretInput" placeholder="Look into it">
+
+            <p id="hiddenText" style="display:none;">
+                Welcome inspector!
+            </p>
+            <script>
+                const input = document.getElementById("secretInput");
+                const text = document.getElementById("hiddenText");
+
+                input.addEventListener("input", () => {
+                    if (input.value.toLowerCase() === "font") {
+                        text.style.display = "block";
+                    } else {
+                        text.style.display = "none";
+                    }
+                });
+            </script>
+        </div>
     </div>
 </body>
 </html>
