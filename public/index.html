@@ -50,28 +50,28 @@
                 ⠙⠓⠒⠶⠦⣄⡉⠃⠘⢉⣠⠴⠶⠒⠚⠋<br>
                 ⠀⠀⠀⠀⠀⠀⠀⠉⠃⠃⠉⠀⠀⠀⠀⠀  <br>
                 </div>
+                <div>  
+                    <input id="secretInput" placeholder="" style="border:none;outline:none;">
+                    <p id="hiddenText" style="display:none;">
+                        Welcome inspector!<br>
+                        <a href="https://downdechill.web.app/">DDC+tool</a>
+                    </p>
+                    <script>
+                        const input = document.getElementById("secretInput");
+                        const text = document.getElementById("hiddenText");
+
+                        input.addEventListener("input", () => {
+                            if (input.value.toLowerCase() === "font") {
+                                text.style.display = "block";
+                            } else {
+                                text.style.display = "none";
+                            }
+                        });
+                    </script>
+                </div>
             </center>
         </div>
         <hr>
-        <div>  
-            <input id="secretInput" placeholder="" style="border:none;outline:none;">
-            <p id="hiddenText" style="display:none;">
-                Welcome inspector!<br>
-                <a href="https://downdechill.web.app/">DDC+tool</a>
-            </p>
-            <script>
-                const input = document.getElementById("secretInput");
-                const text = document.getElementById("hiddenText");
-
-                input.addEventListener("input", () => {
-                    if (input.value.toLowerCase() === "font") {
-                        text.style.display = "block";
-                    } else {
-                        text.style.display = "none";
-                    }
-                });
-            </script>
-        </div>
     </div>
 </body>
 </html>
