@@ -27,29 +27,6 @@
         </div>
         <hr>
         <div>
-            <div style="position:absolute; right:10px; font-family:monospace;" id="clock"></div>
-
-                <script>
-                    function updateClock() {
-                        const now = new Date();
-
-                        const local = now.toLocaleTimeString();
-                        const utc = now.toUTCString().split(" ")[4];
-                        const date = now.toDateString();
-                        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-                        document.getElementById("clock").innerHTML = 
-                            "Local: " + local + "<br>" +
-                            "UTC: " + utc + "<br>" +
-                            date + "<br>" +
-                            tz;
-                    }
-
-                    updateClock();
-                    setInterval(updateClock, 1000);
-                </script>
-        </div>
-        <div>
             <center>
                 <div>
                     <h1>
