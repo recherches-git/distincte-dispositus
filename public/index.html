@@ -21,88 +21,91 @@
     <link rel="icon" type="image/png" href="https://cdn.phototourl.com/free/2026-07-05-b3cc335e-9ea3-4003-9285-0a46cf13f09b.png">
 </head>
 <body>
+    
+<div>
+        
     <div>
-        <div>
-            <a href="/">Index page</a> | 
-        </div>
-        <hr>
-        <div>
-            <center>
-                <div>
-                    <h1>
-                        Distincte Dispositus
-                    </h1>
-                </div>
-                <div>
-                    <h3>
-                        "clearly disposed"
-                    </h3>
-                </div>
-                <div>
-                    <p>
-                        CC0 2026 <a href="https://github.com/recherches-git/distincte-dispositus" target="_blank" rel="noopener noreferrer">recherches-git/distincte-dispositus</a> 
-                    </p>
-                </div>
+        <a href="/">Index page</a> | 
+    </div>
+
+    <hr>
+
+    <div>
+        <center>
+
+            <div>
+                <h1>Distincte Dispositus</h1>
+            </div>
+
+            <div>
+                <h3>"clearly disposed"</h3>
+            </div>
+
+            <div>
+                <p>CC0 2026 <a href="https://github.com/recherches-git/distincte-dispositus" target="_blank" rel="noopener noreferrer">recherches-git/distincte-dispositus</a> </p>
+            </div>
+
             </center>
-        </div>
-        <hr>
+    </div>
+
+    <hr>
+
+    <div>
+
         <div>
-            <div>
-                <h3>
-                    Internet Resources of Interest
-                </h3>
-            </div>
-            <div>
-                Watch pretty much any movies in english for free:<br>
-                <a href="https://www.lookmovie2.to/" target="_blank" rel="noopener noreferrer">https://www.lookmovie2.to/</a><br>
-                Download pretty much any steam game for free:<br>
-                <a href="https://steamrip.com/" target="_blank" rel="noopener noreferrer">https://steamrip.com/</a><br>
-                Fast & unlimited photo to url:<br>
-                <a href="https://phototourl.com/" target="_blank" rel="noopener noreferrer">https://phototourl.com/</a><br>
-                Unrestricted AI:<br>
-                <a href="https://notrack.ai/chat" target="_blank" rel="noopener noreferrer">https://notrack.ai/chat</a><br>
-                Unrestricted AI onion:<br>
-                <a href="https://digdig2nugjpszzmqe5ep2bk7lqfpdlyrkojsx2j6kzalnrqtwedr3id.onion" target="_blank" rel="noopener noreferrer">https://digdig2nugjpszzmqe5ep2bk7lqfpdlyrkojsx2j6kzalnrqtwedr3id.onion</a><br>
-            </div>
+            <h3>Internet Resources of Interest</h3>
         </div>
-        <hr>
+
         <div>
-            <div>
-                <h3>
-                Html-dev-tool
-                </h3>
-            </div>
-            <div>
-                <div>
-                <button onclick="clearCode()">Clear</button>
-                </div>
-                    <div>
-                        <textarea id="code" style="width:50%;height:50%;font-family:'Times New Roman', Times, serif;">
-                        </textarea>
-                        <iframe id="preview" style="width:50%;height:400px;font-family:'Times New Roman', Times, serif;">
-                        </iframe>
-                    </div>
-                </div>
+            Watch pretty much any movies in english for free:<br>
+            <a href="https://www.lookmovie2.to/" target="_blank" rel="noopener noreferrer">https://www.lookmovie2.to/</a><br>
+            Download pretty much any steam game for free:<br>
+            <a href="https://steamrip.com/" target="_blank" rel="noopener noreferrer">https://steamrip.com/</a><br>
+            Fast & unlimited photo to url:<br>
+            <a href="https://phototourl.com/" target="_blank" rel="noopener noreferrer">https://phototourl.com/</a><br>
+            Unrestricted AI:<br>
+            <a href="https://notrack.ai/chat" target="_blank" rel="noopener noreferrer">https://notrack.ai/chat</a><br>
+            Unrestricted AI onion:<br>
+            <a href="https://digdig2nugjpszzmqe5ep2bk7lqfpdlyrkojsx2j6kzalnrqtwedr3id.onion" target="_blank" rel="noopener noreferrer">https://digdig2nugjpszzmqe5ep2bk7lqfpdlyrkojsx2j6kzalnrqtwedr3id.onion</a><br>
+        </div>
+            
+    </div>
+            
+    <hr>
+            
+    <div>
+
+        <div>
+            <h3>Html-dev-tool</h3>       
+        </div>
+
+        <div>
+            <button onclick="clearCode()">Clear</button>
+        </div>
+
+        <div>
+            <textarea id="code" style="width:50%;height:50%;font-family:'Times New Roman', Times, serif;"></textarea>
+            <iframe id="preview" style="width:50%;height:400px;font-family:'Times New Roman', Times, serif;"></iframe>
             <script>
-                const code = document.getElementById("code");
-                const preview = document.getElementById("preview");
-                function update() {
-                preview.srcdoc = code.value;
-                }
-                code.addEventListener("input", update);
-                function clearCode() {
-                code.value = "";
-                update();
-                }
-                update();
+            const code = document.getElementById("code");
+            const preview = document.getElementById("preview");
+            function update() {
+            preview.srcdoc = code.value;
+            }
+            code.addEventListener("input", update);
+            function clearCode() {
+            code.value = "";
+            update();
+            }
+            update();
             </script>
         </div>
-        <hr>
-        <div>
-            <h3>
-                About
-            </h3>
-        </div>           
+
     </div>
+
+    <hr>
+        
+</div>
+
 </body>
 </html>
