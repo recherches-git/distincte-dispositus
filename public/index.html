@@ -69,38 +69,30 @@
         <div>
             <div>
                 <h3>
-                    Html-dev-tool
+                Html-dev-tool
                 </h3>
             </div>
-            <div style="display:flex;flex-direction:column;height:90vh;gap:8px;">
+            <div>
                 <div>
-                    <button onclick="clearCode()">
-                        Clear
-                    </button>
+                <button onclick="clearCode()">Clear</button>
                 </div>
-                <div>
-                    <div style="height:150px;overflow:auto;border:1px solid #ccc;">
-                        <textarea id="code" 
-                            style="width:100%;height:100%;font-family:'Times New Roman', Times, serif;resize:none;border:none;outline:none;">
+                    <div>
+                        <textarea id="code" style="width:50%;height:50%;font-family:'Times New Roman', Times, serif;">
                         </textarea>
-                    </div>
-                    <div style="height:750px;overflow:auto;border:1px solid #ccc;">
-                        <iframe id="preview" 
-                            style="width:100%;height:100%;border:none;">
+                        <iframe id="preview" style="width:50%;height:400px;font-family:'Times New Roman', Times, serif;">
                         </iframe>
                     </div>
                 </div>
-            </div>
             <script>
                 const code = document.getElementById("code");
                 const preview = document.getElementById("preview");
                 function update() {
-                    preview.srcdoc = code.value;
+                preview.srcdoc = code.value;
                 }
                 code.addEventListener("input", update);
                 function clearCode() {
-                    code.value = "";
-                    update();
+                code.value = "";
+                update();
                 }
                 update();
             </script>
